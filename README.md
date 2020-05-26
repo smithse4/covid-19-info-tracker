@@ -12,6 +12,13 @@ Collaborative application built with New York Times Scraper API, the Virus Track
 
 The intended audience and user-base for this app is anyone that would like a more visual representation of the current progression of the pandemic currently sweeping the nation.
 
+## Installing
+
+To run the app locally, you will first need to git clone the repository to your local machine.
+
+* Cd into repository
+* Right-click in index.html and choose 'Open in Default Browser'
+
 ## Screenshot of Deployed Site
 
 ![COVID-19 Info Tracker](./assets/images/covid.png)
