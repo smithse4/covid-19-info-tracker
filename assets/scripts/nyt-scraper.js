@@ -1,3 +1,6 @@
+// NYT Scraper API JS
+
+// Dropdown menu items
 var keyWord = [
   'covid-19-coronavirus',
   'coronavirus-origin',
@@ -6,6 +9,7 @@ var keyWord = [
   'how-can-i-Prepare-for-coronavirus',
   'hand-sanitizer-and-coronavirus'
 ];
+
 var selectedKeyword = keyWord[0];
 var queryURLGlobal =
   'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=' +
@@ -17,6 +21,7 @@ function getKeyword(index = 0) {
   displayData(updatedURL);
 }
 
+// API call including user chosen search subject
 function buildQueryURL(topic = '') {
   return (
     'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=' +
@@ -25,6 +30,7 @@ function buildQueryURL(topic = '') {
   );
 }
 
+// API call to NYT Scraper
 function displayData(queryURL = selectedKeyword) {
   $.ajax({
     url: queryURL,
@@ -32,7 +38,6 @@ function displayData(queryURL = selectedKeyword) {
   }).then(function(response) {
     $('#article-space').html('');
     for (i = 0; i < 3; i++) {
-      // will need to empty
       var newArticleLink = $('<a>');
       var newArticleSnippet = $('<p>');
 
