@@ -16,8 +16,12 @@
 
 .text-color {
   color: white;
-  background-color: gray;
+  background-color: #3B1910;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
+
+/* 3B1910 */
 
 h1,
 h3 {
@@ -34,7 +38,7 @@ h3 {
 }
 
 .bottom-margin {
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 
 .link-text {
@@ -60,7 +64,7 @@ body {
 
 /* Style The Dropdown Button */
 .dropbtn {
-  background-color: rgb(77, 76, 76);
+  background-color: #D20605;
   color: white;
   padding: 6px;
   font-size: 16px;
@@ -120,7 +124,7 @@ body {
 .charity-block {
   padding: 0;
   margin: 0.01em 16px;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -136,6 +140,10 @@ body {
 
 #charity-cards {
   padding: 0;
+}
+
+#data-space {
+  margin-top: 10px;
 }
 
 /* Footer section */
