@@ -25,7 +25,7 @@ To run the app locally, you will first need to git clone the repository to your 
 
 ## Screenshot of Deployed Site
 
-![COVID-19 Info Tracker](./assets/images/covid.png)
+![COVID-19 Info Tracker](./assets/images/covid-19.png)
 
 ## Features
 
