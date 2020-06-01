@@ -28,29 +28,21 @@
 </head>
 
 <body>
-  <!-- altered hero-image in style.css to give it a default background color (in case of load failure)
-  and centered image location to prevent weird behavior at high screen sizes; 
-  added benefit of the latter is that text stays in same position on image at all sizes, now -->
+  <!-- Hero Image -->
   <header class="w3-container hero-image w3-center w3-padding-48 w3-text-white">
-    <!-- added an ID to give the title some text-shadow, making it pop on the multi-color background -->
     <h2 class="header-color" id="text-outline">
       Coronavirus Information Tracker
     </h2>
     <p id="today" class="date-color"></p>
   </header>
 
-  <!-- Main content below header/above charities contained within container block; 
-    two 'columns' then sit within a single row, one displaying our NYT Api scraper data...
-    and the other our CoronaTracker API data -->
+  <!-- Main content -->
   <section class="w3-container">
     <section id="main">
       <div class="w3-row-padding">
-        <!-- changed w3-half to more specific breakpoints using columns; 
-        this way, news and graphs should be easily viewable on, say, an iPad -->
 
+        <!-- NYT Scraper Section -->
         <div class="w3-col m12 l6 info-box" id="news-block">
-          <!-- please note that removing w3-margin from the h3s results in a cleaner header lineup with text; 
-        if current gap is intended, please ignore this comment -->
           <h3 class="text-color">COVID-19 News</h3>
           <div class="dropdown">
             <button class="dropbtn">
@@ -65,10 +57,11 @@
             </div>
           </div>
           <!-- <hr> -->
-          <!-- This div is where we append articles pulled from the NYT API scraper -->
+          <!-- Appended articles pulled from the NYT API scraper -->
           <div id="article-space"></div>
         </div>
 
+        <!-- COVID-19 tracker -->
         <div class="w3-col m12 l6 info-box">
           <h3 class="text-color">COVID-19 Case Tracker</h3>
           <div class="dropdown">
@@ -86,28 +79,19 @@
               <a onclick="displayCountry(9)">Japan</a>
             </div>
           </div>
-          <!-- This div is where we'll append the graphs that display tracker API data -->
+          <!-- Appended graphs to display tracker API data -->
           <canvas id="data-space"></canvas>
         </div>
       </div>
     </section>
   </section>
 
-  <!-- Second container displays a 'mini-header' introducing the charities that we're supporting -->
+  <!-- Second section with charitable giving suggestion -->
   <section class="w3-container w3-center">
     <h2 id="charity-heading">Get Involved</h2>
     <p id="charity-describer">Ways to Make a Difference. Donate Today!</p>
   </section>
-
-  <!-- Third container (newly added to line up image borders with rest of page)
-displays three image cards within 3 columns, within which are the associated links in their own containers -->
-
   <section class="w3-container bottom-margin">
-    <!-- similar to above, changed to add more specific breakpoints; 
-    here, images only shrink at ~932px, stacking at all sizes below; 
-    this avoids these really tiny images at ~650px -->
-    <!-- additionally, fixed pretty much all the links; 
-    as-is, they weren't actually targetting the assets folder, thus breaking the site -->
     <div class="w3-col m12 l4">
       <div class="w3-card w3-margin">
         <a href="https://www.directrelief.org">
@@ -181,6 +165,7 @@ displays three image cards within 3 columns, within which are the associated lin
     </div>
   </section>
 
+  <!-- Footer -->
   <div class="footer">
     <p class="footer-text">
       Disclaimer:<br />This website was created as a educational project. Please
@@ -199,10 +184,6 @@ displays three image cards within 3 columns, within which are the associated lin
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"
   ></script>
-
-  <!-- altered links to reflect addition of assets folder; 
-  scripts were commented out temporarily to avoid error 429 (Too Many Requests)
-  while testing the page - they can be re-enabled at any time, and I should have done so before pushing -->
   <script src="./assets/scripts/scripts.js"></script>
   <script src="./assets/scripts/nyt-scraper.js"></script>
   <script src="./assets/scripts/virus-tracker.js"></script>
