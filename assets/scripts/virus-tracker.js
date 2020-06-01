@@ -1,16 +1,6 @@
 // Country List: USA, Iran, South Korea, Italy, UK, Germany, France, Spain, China, Japan
 
 var countryCode = ["US", "IR", "KR", "IT", "GB", "DE", "FR", "ES", "CN", "JP"]
-// var currentCountry = 0;
-// var countryTimelineQuery =
-// "https://cors-anywhere.herokuapp.com/https://thevirustracker.com/free-api?countryTimeline=" + countryCode[currentCountry];
-
-// Then call & pass in like this ---> displayCountry(countryTimelineQuery);
-// At startup that will display the USA's COVID-19 graph, but we can then change currentCountry everytime the drop down changes,
-// and re-run displayCountry(countryTimelineQuery);
-
-// $(#OUR DROP DOWN).on("state-change", function to change currentCountry)
-// call displayCountry() again
 
 $(document).ready(function() {
   console.log("ready!");
