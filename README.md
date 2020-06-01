@@ -4,7 +4,7 @@ Collaborative application built with New York Times Scraper API, the Virus Track
 
 ## Questions?
 
-Contact me at smithse4@gmail.com
+Contact me at smithse4@gmail.com.
 
 ## Links
 
@@ -38,6 +38,6 @@ To run the app locally, you will first need to git clone the repository to your 
 
 ## Credits
 
-© 2019 fanofstuff, SamSherrill, smithse4, jguerra21
+© 2020 fanofstuff, jguerra21, SamSherrill, smithse4
 
 
