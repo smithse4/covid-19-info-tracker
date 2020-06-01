@@ -39,8 +39,7 @@
   <!-- Main content -->
   <section class="w3-container">
     <section id="main">
-      <div class="w3-row-padding">
-
+      <div class="w3-row-padding main-columns">
         <!-- NYT Scraper Section -->
         <div class="w3-col m12 l6 info-box" id="news-block">
           <h3 class="text-color">COVID-19 News</h3>
@@ -62,10 +61,12 @@
         </div>
 
         <!-- COVID-19 tracker -->
-        <div class="w3-col m12 l6 info-box">
+        <div class="w3-col m12 l6 info-box" id="tracker-box">
           <h3 class="text-color">COVID-19 Case Tracker</h3>
           <div class="dropdown">
-            <button class="dropbtn">Country Select <i class="fas fa-sort-down"></i></button>
+            <button class="dropbtn">
+              Country Select <i class="fas fa-sort-down"></i>
+            </button>
             <div class="dropdown-content">
               <a onclick="displayCountry(0)">United States</a>
               <a onclick="displayCountry(1)">Iran</a>
@@ -86,84 +87,93 @@
     </section>
   </section>
 
+  <br />
+
   <!-- Second section with charitable giving suggestion -->
-  <section class="w3-container w3-center">
-    <h2 id="charity-heading">Get Involved</h2>
-    <p id="charity-describer">Ways to Make a Difference. Donate Today!</p>
-  </section>
-  <section class="w3-container bottom-margin">
-    <div class="w3-col m12 l4">
-      <div class="w3-card w3-margin">
-        <a href="https://www.directrelief.org">
-          <img
-            src="./assets/images/charity-1_1000x683.jpg"
-            style="width:100%"
-          />
-        </a>
-        <div class="w3-container">
-          <p><a href="https://www.directrelief.org">Direct Relief</a></p>
-          <p>
-            Direct Relief works in the U.S. and internationally to equip doctors
-            and nurses with life-saving medical resources to care for the
-            world's most vulnerable people.
-          </p>
+  <section class="w3-container charity-block">
+    <section class="w3-container w3-center" id="charity-heading">
+      <h2 id="charity-title">Get Involved</h2>
+      <p id="charity-describer">Ways to Make a Difference. Donate Today!</p>
+    </section>
+    <section class="bottom-margin charity-cards">
+      <div class="w3-col m12 l4 charity-card-one">
+        <div class="w3-card w3-margin">
+          <a href="https://www.directrelief.org">
+            <img
+              src="./assets/images/charity-1_1000x683.jpg"
+              style="width: 100%;"
+            />
+          </a>
+          <div class="w3-container">
+            <p><a href="https://www.directrelief.org">Direct Relief</a></p>
+            <p>
+              Direct Relief works in the U.S. and internationally to equip
+              doctors and nurses with life-saving medical resources to care for
+              the world's most vulnerable people.
+               
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="w3-col m12 l4">
-      <div class="w3-card w3-margin">
-        <a
-          href="https://disasterphilanthropy.org/disaster/2019-ncov-coronavirus/"
-        >
-          <img
-            src="./assets/images/charity-2_1_1000x683.jpg"
-            style="width:100%"
-          />
-        </a>
-        <div class="w3-container">
-          <p>
-            <a
-              href="https://disasterphilanthropy.org/disaster/2019-ncov-coronavirus/"
-              >Disaster Philanthropy</a
-            >
-          </p>
-          <p>
-            The Center for Disaster Philanthropy is the only full-time national
-            resource dedicated to helping donors maximize their impact by making
-            more intentional disaster-related giving decisions.
-          </p>
+      <div class="w3-col m12 l4 charity-card-two">
+        <div class="w3-card w3-margin">
+          <a
+            href="https://disasterphilanthropy.org/disaster/2019-ncov-coronavirus/"
+          >
+            <img
+              src="./assets/images/charity-2_1_1000x683.jpg"
+              style="width: 100%;"
+            />
+          </a>
+          <div class="w3-container">
+            <p>
+              <a
+                href="https://disasterphilanthropy.org/disaster/2019-ncov-coronavirus/"
+                >Disaster Philanthropy</a
+              >
+            </p>
+            <p>
+              Center for Disaster Philanthropy is the only full-time
+              national resource dedicated to helping donors maximize their
+              impact by making more intentional giving
+              decisions.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="w3-col m12 l4 bottom-margin">
-      <div class="w3-card w3-margin">
-        <a
-          href="https://www.globalgiving.org/projects/coronavirus-relief-fund/"
-        >
-          <img
-            src="./assets/images/charity-3_1000x683.jpg"
-            style="width:100%"
-          />
-        </a>
-        <div class="w3-container">
-          <p>
-            <a
-              href="https://www.globalgiving.org/projects/coronavirus-relief-fund/"
-            >
-              Global Giving</a
-            >
-          </p>
-          <p>
-            GlobalGiving is a global crowdfunding community helping nonprofits
-            access the tools, training, and support they need to be more
-            effective and make our world a better place.
-          </p>
+      <div class="w3-col m12 l4 bottom-margin charity-card-three">
+        <div class="w3-card w3-margin">
+          <a
+            href="https://www.globalgiving.org/projects/coronavirus-relief-fund/"
+          >
+            <img
+              src="./assets/images/charity-3_1000x683.jpg"
+              style="width: 100%;"
+            />
+          </a>
+          <div class="w3-container">
+            <p>
+              <a
+                href="https://www.globalgiving.org/projects/coronavirus-relief-fund/"
+              >
+                Global Giving</a
+              >
+            </p>
+            <p>
+              GlobalGiving is a global crowdfunding community helping nonprofits
+              access the tools, training, and support they need to be more
+              effective and make our world a better place.
+               
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   </section>
+
+  <br />
 
   <!-- Footer -->
   <div class="footer">
