@@ -2,9 +2,7 @@
 
 Collaborative application built with New York Times Scraper API, the Virus Tracker API, JavaScript, HTML, and CSS. It provides relevant, up-to-date information about the impact and spread of COVID-19. The site aggregates data pertaining to the spread of COVID-19 on a country-by-country basis, as well as, pertinent news articles relating to the disease.
 
-## Questions?
-
-Contact me at smithse4@gmail.com.
+### Questions? Email me [here.](mailto:smithse4@gmail.com)
 
 ## Links
 
